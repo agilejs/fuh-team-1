@@ -26,7 +26,7 @@ exports = module.exports = function (db) {
             if (err) {
                 logger.error('Failed to load a list of all actors', err);
                 return res.status(500).send();
-            } 
+            }
 
             // fallback in case no movies are stored in the database
             nodes = nodes || [];
