@@ -63,3 +63,7 @@ app.get('/movies/:id', routes.movies.getMovie);
 app.put('/movies/:id', routes.movies.updateMovie);
 // delete is a reserved word
 app['delete']('/movies/:id', routes.movies.deleteMovie);
+app.get('/actors', routes.actors.getActors);
+app.post('/actors', routes.actors.addActor);
+app.get('/actors/:id', routes.actors.getActor);
+app.put('/actors/:id', routes.actors.updateActor);

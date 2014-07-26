@@ -1,0 +1,23 @@
+<h1>Actors List</h1>
+
+<p>
+    <a class="btn btn-primary"  href="/actors/new">Add Actor</a>
+</p>
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+             Name
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="actor in actors">
+            <td>
+                <a href="#" ng-href="/actors/{{actor.id}}">
+                    {{actor.name}}
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

@@ -36,6 +36,25 @@ angular.module('MovieDatabase', []).config(
         resolve: MovieEditCtrl.resolve,
         templateUrl: '/partial/movies/edit.html'
     })
+    .when('/actors', {
+        controller: ActorsListCtrl,
+        resolve: ActorsListCtrl.resolve,
+        templateUrl: '/partial/actors/list.html'
+    })
+    .when('/actors/new', {
+        controller: ActorsAddCtrl,
+        templateUrl: '/partial/actors/add.html'
+    })
+    .when('/actors/:id', {
+        controller: ActorDetailCtrl,
+        resolve: ActorDetailCtrl.resolve,
+        templateUrl: '/partial/actors/detail.html'
+    })
+    .when('/actors/:id/edit', {
+        controller: ActorEditCtrl,
+        resolve: ActorEditCtrl.resolve,
+        templateUrl: '/partial/actors/edit.html'
+    })
     .when('/404', {
         controller: NotFoundCtrl,
         templateUrl: '/partial/notFound.html'
