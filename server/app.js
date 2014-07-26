@@ -57,6 +57,7 @@ if ('development' === app.get('env')) {
 // are handled by the following routing mechanism.
 var routes = require('./routes')();
 app.get('/movies', routes.movies.getMovies);
+app.get('/movies/add', routes.movies.getMovies);
 app.post('/movies', routes.movies.addMovie);
 app.get('/movies/:id', routes.movies.getMovie);
 app.put('/movies/:id', routes.movies.updateMovie);
