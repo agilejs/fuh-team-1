@@ -9,7 +9,7 @@ function WelcomeCtrl ($scope, moviesResponse) {
     $scope.reverse = false;
     $scope.toggle = function() {
         $scope.reverse = !$scope.reverse;
-    }
+    };
 }
 
 function MoviesListCtrl ($scope, $location, moviesResponse) {

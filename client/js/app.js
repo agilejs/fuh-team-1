@@ -5,7 +5,11 @@
   MoviesAddCtrl:false,
   MovieDetailCtrl:false,
   MovieEditCtrl:false,
-  ErrorCtrl:false */
+  ErrorCtrl:false
+  ActorsListCtrl : false
+  ActorsAddCtrl : false
+  ActorDetailCtrl : false
+  ActorEditCtrl : false */
 
 angular.module('MovieDatabase', []).config(
         function ($routeProvider, $locationProvider, $httpProvider) {
