@@ -2,6 +2,7 @@
     <thead>
         <tr>
             <th>Title</th>
+            <th>Year</th>
         </tr>
     </thead>
     <tbody>
@@ -10,6 +11,10 @@
                 <a href="#" ng-href="/movies/{{movie.id}}">
                     {{movie.title}}
                 </a>
+                <td>
+                    <h ng-show="movie.year != null">{{movie.year}}</h>
+                    <h ng-show="movie.year == null">unknown</h>
+                </td>
             </td>
         </tr>
     </tbody>
